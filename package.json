@@ -1,0 +1,21 @@
+{
+  "name": "agentic-framework-example",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A sanitized example of an agentic workflow framework.",
+  "scripts": {
+    "check": "node --check src/framework.mjs && node --check src/demo.mjs",
+    "demo": "node src/demo.mjs"
+  },
+  "keywords": [
+    "agents",
+    "agentic-framework",
+    "workflow",
+    "evaluation",
+    "guardrails"
+  ],
+  "author": "Matt Schlosser",
+  "license": "UNLICENSED"
+}
+

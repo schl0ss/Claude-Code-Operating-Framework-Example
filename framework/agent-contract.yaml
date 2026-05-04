@@ -1,0 +1,89 @@
+framework:
+  name: Agentic Framework Example
+  version: 0.1.0
+  purpose: Demonstrate a sanitized operating contract for agentic work.
+
+roles:
+  intake:
+    owns:
+      - brief
+      - constraints
+      - unknowns
+      - initial_risk
+    tools:
+      - read_context
+      - ask_clarifying_questions
+  planner:
+    owns:
+      - plan
+      - artifact_list
+      - checkpoint_list
+    tools:
+      - read_context
+      - inspect_repository
+  worker:
+    owns:
+      - work_product
+      - verification_notes
+    tools:
+      - scoped_edit
+      - run_checks
+  critic:
+    owns:
+      - critique
+      - missing_tests
+      - weak_assumptions
+    tools:
+      - read_artifacts
+      - run_checks
+  safety:
+    owns:
+      - approval_requirements
+      - policy_findings
+    tools:
+      - read_policy
+      - inspect_logs
+  delivery:
+    owns:
+      - final_response
+      - residual_risk
+      - next_steps
+    tools:
+      - package_artifacts
+
+approval_gates:
+  external_contact:
+    required: true
+    examples:
+      - sending email
+      - posting publicly
+      - messaging a customer
+  production_change:
+    required: true
+    examples:
+      - deploying code
+      - changing access control
+      - modifying production data
+  financial_action:
+    required: true
+    examples:
+      - buying services
+      - changing subscriptions
+      - authorizing spend
+  restricted_data:
+    required: true
+    examples:
+      - secrets
+      - regulated data
+      - customer records
+
+artifacts:
+  required:
+    - brief
+    - constraints
+    - plan
+    - work_product
+    - critique
+    - approval_record
+    - evaluation
+
