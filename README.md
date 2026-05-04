@@ -81,7 +81,7 @@ src/
 npm run demo
 ```
 
-The demo does not call an LLM, connect to Databricks, or run a real MCP integration. That is intentional. It shows how a broad analytics request becomes scoped artifacts, how risks are surfaced, where approvals happen, and how the final brief is evaluated.
+The demo does not call an LLM, connect to Databricks, or run a real MCP integration. That is intentional. It prints the actual public Claude Code wiring in this repo, then shows how a broad analytics request becomes scoped artifacts, how risks are surfaced, where approvals happen, and how the final brief is evaluated.
 
 ## Core Loop
 

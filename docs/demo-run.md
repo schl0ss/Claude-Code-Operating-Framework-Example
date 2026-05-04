@@ -6,6 +6,15 @@ This is a synthetic example. Names, companies, data, and tasks are fictional.
 
 > We want an AI assistant that reviews shipment events, asset telemetry, maintenance notes, and route constraints, then produces a service-risk brief for operations. It should recommend next actions, but not update customers or production systems without approval.
 
+## Claude Code Wiring
+
+The demo prints the public Claude Code composition before the run artifacts:
+
+- Six sub-agent role cards in `.claude/agents`.
+- Two public skills in `.claude/skills`.
+- Hook events wired through `.claude/settings.json`.
+- The project-scoped toy MCP server in `.mcp.json`.
+
 ## Intake Artifact
 
 - Goal: produce a reviewable service-risk brief from synthetic logistics data.
