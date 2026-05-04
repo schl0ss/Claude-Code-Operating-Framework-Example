@@ -1,0 +1,20 @@
+# Databricks-shaped artifact only.
+# This is intentionally not a deployable bundle or workspace configuration.
+
+resources:
+  jobs:
+    service_risk_triage_public_example:
+      name: service-risk-triage-public-example
+      description: Synthetic teaser job showing where notebook and SQL artifacts would sit.
+      tasks:
+        - task_key: summarize_synthetic_service_risk
+          description: Reads tiny synthetic samples and emits a reviewable data summary artifact.
+          notebook_task:
+            notebook_path: ../notebooks/service-risk-triage.py
+        - task_key: score_public_artifact
+          description: Placeholder for rubric-based evaluation of the public risk brief.
+          depends_on:
+            - task_key: summarize_synthetic_service_risk
+      tags:
+        public_example: "true"
+        production_ready: "false"

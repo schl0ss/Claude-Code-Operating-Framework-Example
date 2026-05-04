@@ -10,10 +10,10 @@ Find what is wrong before the user or customer does.
 - Did it respect constraints?
 - Are assumptions visible?
 - Are claims verifiable?
-- Did the worker skip a required gate?
+- Did any role skip a required gate?
 - Is the result too broad, too narrow, or too vague?
+- Does the decision brief distinguish evidence from inference?
 
 ## Rule
 
-The critic does not rewrite the final artifact silently. It produces findings. The worker or human decides what changes.
-
+The critic does not rewrite the final artifact silently. It produces findings. The responsible role or human decides what changes.

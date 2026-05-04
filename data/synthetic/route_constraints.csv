@@ -1,0 +1,6 @@
+constraint_id,route_id,constraint_type,severity,start_time,end_time,note
+C-9,L-104,weather_window,medium,2026-05-01T12:00:00Z,2026-05-01T18:00:00Z,Crosswind advisory may slow transfers.
+C-12,L-205,yard_capacity,low,2026-05-01T14:00:00Z,2026-05-01T20:00:00Z,Limited dock availability.
+C-18,L-309,crew_window,low,2026-05-01T09:00:00Z,2026-05-01T15:00:00Z,Crew window resolved.
+C-21,L-104,inspection_queue,medium,2026-05-01T13:00:00Z,2026-05-01T19:00:00Z,Inspection queue may affect asset A-17.
+C-25,L-510,network_load,low,2026-05-01T17:00:00Z,2026-05-01T22:00:00Z,Expected load is within tolerance.

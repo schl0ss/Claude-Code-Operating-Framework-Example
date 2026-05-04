@@ -1,21 +1,22 @@
 {
-  "name": "agentic-framework-example",
-  "version": "0.1.0",
+  "name": "claude-code-operating-framework-example",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
-  "description": "A sanitized example of an agentic workflow framework.",
+  "description": "A sanitized Claude Code-first operating framework teaser.",
   "scripts": {
-    "check": "node --check src/framework.mjs && node --check src/demo.mjs",
+    "check": "node --check src/framework.mjs && node --check src/demo.mjs && node --check mcp/synthetic-logistics-server.mjs && node --check .claude/hooks/guard-write-scope.mjs && node --check .claude/hooks/record-artifact.mjs && node --check .claude/hooks/check-public-boundary.mjs",
     "demo": "node src/demo.mjs"
   },
   "keywords": [
     "agents",
     "agentic-framework",
+    "claude-code",
     "workflow",
     "evaluation",
-    "guardrails"
+    "guardrails",
+    "mcp"
   ],
   "author": "Matt Schlosser",
   "license": "UNLICENSED"
 }
-

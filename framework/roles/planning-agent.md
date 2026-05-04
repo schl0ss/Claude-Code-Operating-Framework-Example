@@ -1,4 +1,4 @@
-# Planner Agent
+# Planning Agent
 
 ## Job
 
@@ -18,4 +18,4 @@ Convert the brief into a sequence of inspectable work.
 - Make each artifact reviewable.
 - Identify the first cheap test.
 - Do not hide risk inside optimism.
-
+- Keep the public example inside the implementation boundary.

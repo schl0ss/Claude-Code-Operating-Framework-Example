@@ -1,0 +1,6 @@
+event_id,asset_id,route_id,event_type,event_time,status,delay_minutes
+E-1001,A-17,L-104,departure,2026-05-01T08:05:00Z,departed,0
+E-1002,A-17,L-104,transfer,2026-05-01T13:40:00Z,transfer_delayed,86
+E-1003,A-22,L-205,arrival,2026-05-01T15:10:00Z,arrived,12
+E-1004,A-31,L-104,checkpoint,2026-05-01T16:30:00Z,in_transit,34
+E-1005,A-44,L-309,arrival,2026-05-01T17:20:00Z,arrived,0

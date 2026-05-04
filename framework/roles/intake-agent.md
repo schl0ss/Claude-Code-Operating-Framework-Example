@@ -25,4 +25,4 @@ Turn a loose request into a usable brief.
 - Separate what the user asked for from what the system assumes.
 - Do not plan implementation before the problem is framed.
 - Flag any request that touches customers, production, money, or private data.
-
+- Keep the generic logistics scenario separate from the framework's domain language.

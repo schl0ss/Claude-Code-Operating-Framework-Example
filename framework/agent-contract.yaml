@@ -1,7 +1,8 @@
 framework:
-  name: Agentic Framework Example
-  version: 0.1.0
-  purpose: Demonstrate a sanitized operating contract for agentic work.
+  name: Claude Code Operating Framework Example
+  version: 0.2.0
+  purpose: Demonstrate a sanitized Claude Code-first operating contract for agentic work.
+  disclosure_boundary: Composition visible, production machinery withheld.
 
 roles:
   intake:
@@ -13,7 +14,7 @@ roles:
     tools:
       - read_context
       - ask_clarifying_questions
-  planner:
+  planning:
     owns:
       - plan
       - artifact_list
@@ -21,13 +22,24 @@ roles:
     tools:
       - read_context
       - inspect_repository
-  worker:
+  data:
     owns:
-      - work_product
-      - verification_notes
+      - data_summary
+      - evidence_notes
+      - missing_fields
     tools:
-      - scoped_edit
-      - run_checks
+      - read_synthetic_samples
+      - run_public_sql
+      - inspect_notebook_artifact
+      - query_toy_mcp
+  decision:
+    owns:
+      - risk_brief
+      - proposed_next_actions
+      - residual_risk
+    tools:
+      - read_analysis_artifacts
+      - read_policy_excerpts
   critic:
     owns:
       - critique
@@ -40,30 +52,25 @@ roles:
     owns:
       - approval_requirements
       - policy_findings
+      - blocked_actions
     tools:
       - read_policy
-      - inspect_logs
-  delivery:
-    owns:
-      - final_response
-      - residual_risk
-      - next_steps
-    tools:
-      - package_artifacts
+      - inspect_hook_logs
 
 approval_gates:
   external_contact:
     required: true
     examples:
-      - sending email
-      - posting publicly
-      - messaging a customer
+      - sending customer updates
+      - publishing public status
+      - messaging an operator outside the approved workspace
   production_change:
     required: true
     examples:
       - deploying code
       - changing access control
       - modifying production data
+      - updating operational status
   financial_action:
     required: true
     examples:
@@ -76,14 +83,20 @@ approval_gates:
       - secrets
       - regulated data
       - customer records
+      - confidential operations data
+  autonomous_action:
+    required: true
+    examples:
+      - acting without human approval
+      - scheduling unattended production updates
 
 artifacts:
   required:
     - brief
     - constraints
     - plan
-    - work_product
+    - data_summary
+    - risk_brief
     - critique
     - approval_record
     - evaluation
-

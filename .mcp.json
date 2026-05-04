@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "synthetic-logistics": {
+      "command": "node",
+      "args": [
+        "./mcp/synthetic-logistics-server.mjs"
+      ],
+      "env": {
+        "PUBLIC_EXAMPLE_ONLY": "true"
+      }
+    }
+  }
+}

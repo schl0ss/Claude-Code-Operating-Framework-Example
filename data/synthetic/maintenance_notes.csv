@@ -1,0 +1,6 @@
+note_id,asset_id,note_time,severity,note
+M-7001,A-17,2026-04-30T21:00:00Z,medium,Vibration warning should be reviewed before next long-haul segment.
+M-7002,A-31,2026-04-29T18:30:00Z,low,Inspection deferred to next scheduled yard window.
+M-7003,A-44,2026-04-28T10:10:00Z,low,Routine inspection complete.
+M-7004,A-22,2026-04-27T09:20:00Z,low,No open maintenance concerns.
+M-7005,A-58,2026-04-26T11:45:00Z,low,Sensor calibration verified.
