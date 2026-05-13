@@ -2,6 +2,7 @@ node_modules/
 .DS_Store
 .env
 .env.*
+.claude/worktrees/
 .claude/settings.local.json
 interview-prep.md
 artifacts/hook-log.ndjson
