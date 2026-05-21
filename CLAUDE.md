@@ -2,8 +2,6 @@
 
 This file is the Claude Code routing layer for the repository. Read it first when working here.
 
-This repo is a public, sanitized example of an agentic engineering operating framework. It shows architecture, role boundaries, skills, hooks, MCP shape, artifacts, approval gates, and evaluation. It is not an application, accelerator, production prompt pack, or deployable data platform.
-
 ## Start Here
 
 1. Read `README.md` for the public implementation boundary.
